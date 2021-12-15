@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .top-triangle {
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid green;
+            border-right: 25px solid transparent;
+            border-left: 25px solid transparent;
+        }
+
+        .right-triangle {
+            width: 0;
+            height: 0;
+            border-right: 50px solid green;
+            border-bottom: 25px solid transparent;
+            border-top: 25px solid transparent;
+        }
+
+        .down-triangle {
+            width: 0;
+            height: 0;
+            border-top: 50px solid green;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+
+        .left-triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid green;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+        }
+
+        .moon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        .half-moon {
+            width: 25px;
+            height: 50px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            background-color: green;
+        }
+
+        .crescent-moon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        .crescent-moon div {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .moon-ring {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .moon-ring div {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class='top-triangle'>
+        </div>
+
+        <div class='right-triangle'>
+        </div>
+
+        <div class='down-triangle'>
+        </div>
+
+        <div class='left-triangle'>
+        </div>
+
+        <div class='half-moon'>
+        </div>
+
+        <div class='crescent-moon'>
+            <div></div>
+        </div>
+
+        <div class='moon'>
+        </div>
+
+        <div class='moon-ring'>
+            <div></div>
+        </div>
+
+    </main>
+</body>
+
+</html>
